@@ -1,5 +1,6 @@
 <?php
 $conn=mysqli_connect('localhost','root','','dsc');
+$r=1;
 if(isset($_REQUEST["usubmit"]))
 {
 $User=$_REQUEST["Uname"];
@@ -16,13 +17,7 @@ $query="insert into regist values('$User','$Pass','$email','$ques','$ans','$date
 //INSERt into regist VALUES('abs','asvnads','di@gamil.com','any','ans','2018-08-07','any','male',9898989898);
 
 $r=mysqli_query($conn,$query);
-if($r>0)
-{
-  echo "Registeration Done";
-}
-else {
-  echo "Sorry!! Registration can't take place now";
-}
+
 }
  ?>
 <!DOCTYPE html>
@@ -144,13 +139,18 @@ else {
 
            <input type="submit" name="usubmit" value="Submit">
            <marquee direction="right"onmouseover="this.stop()"onmouseleave="this.start()">
-           <h3><?php if($r>0)
+           <h3>
+             <?php
+             if(isset($_REQUEST["usubmit"]))
+             {
+               if($r>0)
            {
              echo "Registeration Done";
            }
            else {
              echo "Sorry!! Registration can't take place now";
-           } ?></h3>
+           }
+         } ?></h3>
            </marquee>
          </form>
 

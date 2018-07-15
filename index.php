@@ -65,7 +65,7 @@
 				<div class="eight columns">
 					<h3>Blogs</h3>
           <video  controls>
-            <source src="https://video.xx.fbcdn.net/v/t42.1790-2/34165655_1890550730965427_5984056905633366016_n.mp4?_nc_cat=0&vs=8792a14c22fad576&_nc_vs=HBksFQAYJEdKZFRDUUt6d2I4a2NyY0dBQUFBQUFBTnBBdFRidjRHQUFBRhUAABUAGCRHR1NiREFJZjlDOW5uaGNIQUFBQUFBQTh5R3NCYnY0R0FBQUYVAgBLABUAABgBMBaw7vWJ7bqKBBUCGQUYAkMzGAt2dHNfcHJldmlldxwXQDxUOVgQYk4YGGRhc2hfdjRfaHExX2ZyYWdfMl92aWRlbwAYGHZpZGVvcy52dHMuY2FsbGJhY2sucHJvZBkcFQAVvJkCAAA%3D&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&oh=1f2676055001e07f7c186202c6d2884e&oe=5B4B9229&_nc_rid=d71c7929c9d35b1" type="video/mp4">
+            <source src="\Video\DSCchange.mp4" type="video/mp4">
             <source src="\Video\DSCchange.ogg" type="video/ogg">
 
           </video>
