@@ -144,13 +144,15 @@ $r=mysqli_query($conn,$query);
              if(isset($_REQUEST["usubmit"]))
              {
                if($r>0)
-           {
-             echo "Registeration Done";
-           }
-           else {
-             echo "Sorry!! Registration can't take place now";
-           }
-         } ?></h3>
+               {
+                 echo "Registeration Done";
+                 }
+               else {
+                 echo "Sorry!! Registration can't take place now";
+                 }
+              } 
+	      ?>
+		   </h3>
            </marquee>
          </form>
 
