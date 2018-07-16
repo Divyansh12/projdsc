@@ -12,12 +12,17 @@ $ans=$_REQUEST["Qans"];
 $gend=$_REQUEST["gender"];
 $date=$_REQUEST["cal"];
 $hobby=implode(' , ',$_REQUEST['hobby']);
+$pass2=$_REQUEST["Upass2"];
+if($Pass==$pass2){
 $query="insert into regist values('$User','$Pass','$email','$ques','$ans','$date','$hobby','$gend',$phone)";
 
 //INSERt into regist VALUES('abs','asvnads','di@gamil.com','any','ans','2018-08-07','any','male',9898989898);
 
 $r=mysqli_query($conn,$query);
-
+}
+else {
+  echo"<script>alert('Password Does Not Match');</script>";
+}
 }
  ?>
 <!DOCTYPE html>
@@ -96,7 +101,7 @@ $r=mysqli_query($conn,$query);
            Password :: <input type="password" name="Upass" required>
            <br>
            <br>
-           Re-Password :: <input type="password" name="Urpass" required>
+           Re-Password :: <input type="password" name="Upass2" required>
            <br>
            <br>
            Email :: <input type="email" name="uemail" required>

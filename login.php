@@ -17,7 +17,7 @@ if(isset($_REQUEST["login"]))
   }
   else
   {
-     echo "Invalid usename/password";
+     echo "<script>alert('Invalid usename/password');</script>";
   }
 }
 

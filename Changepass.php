@@ -1,4 +1,40 @@
 <?php
+session_start();
+$conn=mysqli_connect('localhost','root','','dsc');
+if(isset($_SESSION['U']))
+{
+  $User=$_SESSION['U'];
+  if(isset($_REQUEST['btnsubmit']))
+  {
+    $pass=$_REQUEST["Upass"];
+    $pass2=$_REQUEST["Upass2"];
+    if($pass==$pass2){
+    $query=" update regist SET password='$pass' where username='$User'" ;
+    $r=mysqli_query($conn,$query);
+    if($r>0)
+    {
+      echo"<script>alert('Password Updated');</script>";
+
+     }
+    }
+    else {
+      echo"<script>alert('Password Does Not Match');</script>";
+    }
+  }
+  if(isset($_SESSION['expire']))
+  {
+    $now=time();
+    if($_SESSION['expire']<$now)
+    {
+      session_destroy();
+      header('location:login.php');
+    }
+  }
+}
+else
+ {
+ header('location:login.php');
+}
  ?>
 <!DOCTYPE html>
 
@@ -65,24 +101,22 @@
 		<div class="twelve columns">
 			<div class="row">
 				<div class="eight columns">
-					<h3>About Us</h3>
-          <hr/>
-          <p style="font-size:25">The main objective of DSC is to create developers starting
-              from ground up. For GDG, which still stands strong as
-              platform for developers to showcase their skills, we need
-DSC to promote potential students to take up technolo
-gy and deep-dive into development so that they can grow
-their skills and become a successful developer. GDG fo
-cuses on existing developers but DSC focuses on identify
-ing potential and develop" a developer! In a college with
-students of immense talent, we need a DSC to channel
-their talent into something greater, so that they can devel
-op for the "next billion users"!
-</p>
-<p>
-More Building and Less talking this time...Are you
-ready to sail with us?</p>
+          <form method="post" style="align:center">
+          <h1>Change Password</h1>
 
+          New Password::<input type="password" name="Upass" required/>
+          <br>
+          <br>
+          Confirm Password::<input type="password" name="Upass2" required/>
+          <br>
+          <br>
+
+          <input type="submit" name="btnsubmit" value="Submit Changes"/>
+          <br>
+          <br>
+
+
+          </form>
 				</div>
 
 				<div class="four columns">

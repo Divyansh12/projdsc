@@ -18,7 +18,6 @@ $conn=mysqli_connect('localhost','root','','dsc');
   {
     $q=$w[0];
     $ans=$w[1];
-    echo $ans;
   }
   if(isset($_REQUEST['btnsubmit']))
   {
