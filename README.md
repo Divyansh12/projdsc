@@ -1,5 +1,5 @@
 # DSC-BVP Site
-
+***
 # How to Use a PHP file
 
 The project runs o PHP so first of all you have to download Apache (using either wamp or xamp server), 
