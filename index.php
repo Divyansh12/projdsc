@@ -64,7 +64,7 @@
 			<div class="row">
 				<div class="eight columns">
 					<h3>Blogs</h3>
-          <video  controls>
+          <video  controls height="500" width="600">
             <source src="https://video.xx.fbcdn.net/v/t42.9040-2/34270403_1164618480345837_3873394836895694848_n.mp4?_nc_cat=0&efg=eyJybHIiOjMwMCwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&rl=300&vabr=111&oh=5d52e3b6044b5999be4884bc50aa1a13&oe=5B4CE0C7" type="video/mp4">
             <source src="\Video\DSCchange.ogg" type="video/ogg">
 
@@ -75,11 +75,12 @@
 					<h4>News</h4>
 
           <marquee direction="up"onmouseover="this.stop()"onmouseleave="this.start()">
+
             <ul>
               <li><h4>GDG-BVP changed to DSC-BVP</h4></li>
+              <hr />
               <li><h4>Actions on Google Workshop held on Jul-2,6,9-2018</h4> </li>
             </ul>
-
           </marquee>
 
 				</div>
