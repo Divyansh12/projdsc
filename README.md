@@ -13,19 +13,19 @@ The Project is solves the purpose of showing DSC-BVP blog and newsletter along w
 
 # Screeshots
 
-![Image not found](/images/Screenshots/2018-07-17.png)
+![Image not found](/images/Screenshots/img 1.png)
 
-![Image not found](/images/Screenshots/2018-07-17 (2).png)
+![Image not found](/images/Screenshots/img 2.png)
 
-![Image not found](/images/Screenshots/2018-07-17 (3).png)
+![Image not found](/images/Screenshots/img 3.png)
 
-![Image not found](/images/Screenshots/2018-07-17 (4).png)
+![Image not found](/images/Screenshots/img 4.png)
 
-![Image not found](/images/Screenshots/2018-07-17 (5).png)
+![Image not found](/images/Screenshots/img 5.png)
 
-![Image not found](/images/Screenshots/2018-07-17 (6).png)
+![Image not found](/images/Screenshots/img 6.png)
 
-![Image not found](/images/Screenshots/2018-07-17 (7).png)
+![Image not found](/images/Screenshots/img 7.png)
 
 
 
